@@ -1,0 +1,70 @@
+.integration-success {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .integration-success h2 {
+    color: #28a745;
+    margin-bottom: 10px;
+  }
+  
+  .integration-success p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .buttons button {
+    padding: 10px 20px;
+    background: #833ab4;
+  background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .social-sharing {
+    margin-bottom: 20px;
+  }
+  
+  .social-sharing p {
+    margin-bottom: 10px;
+  }
+  
+  .social-sharing button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+  }
+  
+  .complete-button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 768px) {
+    .integration-success {
+      padding: 10px;
+    }
+  }

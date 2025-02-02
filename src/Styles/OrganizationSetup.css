@@ -1,0 +1,43 @@
+.organization-setup {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .organization-setup input,
+  .organization-setup textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .organization-setup textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .organization-setup button {
+    width: 100%;
+    padding: 10px;
+    background: #833ab4;
+  background: linear-gradient(
+    to right,
+    #833ab4,#fd1d1d,#fcb045
+  );
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .error {
+    color: red;
+  }
+  @media (max-width: 768px) {
+    .organization-setup {
+      padding: 10px;
+    }
+  }

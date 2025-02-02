@@ -1,0 +1,78 @@
+.website-integration {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .options {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .option {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .option h3 {
+    margin-bottom: 10px;
+  }
+  
+  .code-container {
+    margin-top: 10px;
+    text-align: left;
+  }
+  
+  .code-container pre {
+    background-color: #282c34;
+    color: #61dafb;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+  }
+  
+  .code-container button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #833ab4;
+    background: linear-gradient(
+      to right,
+      #833ab4,#fd1d1d,#fcb045
+    );
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .complete-button {
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    .website-integration {
+      padding: 10px;
+    }
+  }
