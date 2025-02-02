@@ -1,70 +1,187 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+---
 
-## Available Scripts
+# **Chatbot Integration and Testing Platform**
 
-In the project directory, you can run:
+This project is a **Chatbot Integration and Testing Platform** designed to help users register, integrate a chatbot into their website, and test its functionality. The platform includes features like user registration, email verification, organization setup, webpage scraping status, chatbot testing, and website integration.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## **Features**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. **User Registration:**
+   - Users can register using their name, email, and password.
+   - Option to "Continue with Google" for OAuth-based registration.
+   - Email verification with a 6-digit code.
 
-### `npm test`
+2. **Organization Setup:**
+   - Users can enter their company name, website URL, and description.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. **Webpage Scraping Status:**
+   - Displays a list of detected webpages (scraped and pending).
+   - Users can click on a webpage to view its scraped data.
 
-### `npm run build`
+4. **Chatbot Testing:**
+   - Users can test the chatbot on their website.
+   - Option to provide feedback if the chatbot is not working as intended.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. **Website Integration:**
+   - Users can integrate the chatbot into their website by copying and pasting a code snippet or sending instructions to their developer.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+6. **Integration Success Screen:**
+   - Displays a success message with confetti animation.
+   - Buttons to explore the admin panel, start talking to the chatbot, and share the success on social media.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+7. **Mobile Responsiveness:**
+   - The platform is fully responsive and works seamlessly on mobile devices.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## **Technologies Used**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Frontend:**
+  - React.js
+  - React Router (for navigation)
+  - EmailJS (for sending emails)
+  - React Confetti (for success animation)
+  - CSS (for styling)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **Backend:**
+  - No backend is used in this project. All functionality is handled on the frontend.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## **Setup Instructions**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### **1. Clone the Repository**
+Clone the repository to your local machine:
+```bash
+git clone https://github.com/your-username/chatbot-integration-platform.git
+cd chatbot-integration-platform
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### **2. Install Dependencies**
+Install the required dependencies using npm:
+```bash
+npm install
+```
 
-### Code Splitting
+### **3. Set Up EmailJS**
+1. Sign up for an account at [EmailJS](https://www.emailjs.com/).
+2. Create an email service (e.g., Gmail) and a template for sending verification emails.
+3. Replace the following placeholders in the `EmailVerification.jsx` file with your EmailJS credentials:
+   - `YOUR_SERVICE_ID`
+   - `YOUR_TEMPLATE_ID`
+   - `YOUR_USER_ID`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### **4. Run the Project**
+Start the development server:
+```bash
+npm start
+```
+The application will be available at `http://localhost:3000`.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## **Project Structure**
 
-### Making a Progressive Web App
+```
+src/
+├── components/
+│   ├── ChatWindow.jsx
+│   ├── Message.jsx
+│   ├── InputArea.jsx
+│   ├── RegistrationForm.jsx
+│   ├── EmailVerification.jsx
+│   ├── OrganizationSetup.jsx
+│   ├── WebpageScrapingStatus.jsx
+│   ├── ChatbotTesting.jsx
+│   ├── WebsiteIntegration.jsx
+│   ├── IntegrationSuccess.jsx
+│   ├── Login.jsx
+├── App.js
+├── index.js
+├── styles/
+│   ├── App.css
+│   ├── ChatWindow.css
+│   ├── Message.css
+│   ├── RegistrationForm.css
+│   ├── EmailVerification.css
+│   ├── OrganizationSetup.css
+│   ├── WebpageScrapingStatus.css
+│   ├── ChatbotTesting.css
+│   ├── WebsiteIntegration.css
+│   ├── IntegrationSuccess.css
+│   ├── Login.css
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## **Usage**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### **1. Registration**
+- Click on the "Register" button.
+- Enter your name, email, and password.
+- Verify your email using the 6-digit code sent to your inbox.
 
-### Deployment
+### **2. Organization Setup**
+- Enter your company name, website URL, and description.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+### **3. Webpage Scraping Status**
+- View the list of detected webpages.
+- Click on a webpage to view its scraped data.
 
-### `npm run build` fails to minify
+### **4. Chatbot Testing**
+- Test the chatbot on your website.
+- Provide feedback if the chatbot is not working as intended.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### **5. Website Integration**
+- Copy and paste the chatbot integration code into your website.
+- Alternatively, send instructions to your developer via email.
+
+### **6. Integration Success**
+- View the success screen with confetti animation.
+- Explore the admin panel, start talking to the chatbot, or share your success on social media.
+
+---
+
+## **Dummy Data**
+
+- **Email:** `user@example.com`
+- **Password:** `password`
+
+---
+
+## **Contributing**
+
+Contributions are welcome! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature or bugfix.
+3. Commit your changes.
+4. Push your branch and submit a pull request.
+
+---
+
+## **License**
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## **Contact**
+
+For any questions or feedback, please contact:
+
+- **Name** vinod Kumar
+- **Email:** vinodkumart22032gmail.com
+
+
+---
+
+## **Acknowledgments**
+
+- [EmailJS](https://www.emailjs.com/) for email functionality.
+- [React Confetti](https://www.npmjs.com/package/react-confetti) for the success animation.
+
+---
